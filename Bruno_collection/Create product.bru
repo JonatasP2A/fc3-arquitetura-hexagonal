@@ -16,3 +16,8 @@ body:json {
     "price": 25.99
   }
 }
+
+script:post-response {
+  let data = res.getBody();
+  bru.setEnvVar("product_id", data.ID);
+}

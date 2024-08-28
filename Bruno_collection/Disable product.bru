@@ -1,0 +1,11 @@
+meta {
+  name: Disable product
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{base_url}}/product/{{product_id}}/disable
+  body: none
+  auth: none
+}
