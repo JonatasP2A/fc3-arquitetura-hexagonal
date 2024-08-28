@@ -1,0 +1,18 @@
+meta {
+  name: Create product
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{base_url}}/product
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Teste Bruno",
+    "price": 25.99
+  }
+}
